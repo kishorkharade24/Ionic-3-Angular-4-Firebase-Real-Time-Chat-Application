@@ -73,7 +73,6 @@ export class ChatPage {
   }
 
   scrollToBottom() {
-    let dimensions = this.content.getContentDimensions();
     this.content.scrollToBottom(100);
   }
 

@@ -1,8 +1,7 @@
 import { Component } from '@angular/core';
-import { NavController, AlertController } from 'ionic-angular';
-import {ChatPage} from "../chat/chat";
-import {RegisterPage} from "../register/register";
-import {SigninPage} from "../signin/signin";
+import { NavController } from 'ionic-angular';
+import { RegisterPage } from "../register/register";
+import { SigninPage } from "../signin/signin";
 
 @Component({
   selector: 'page-home',
@@ -11,8 +10,7 @@ import {SigninPage} from "../signin/signin";
 export class HomePage {
   userName: string = '';
 
-  constructor(public navCtrl: NavController,
-              public alertCtrl: AlertController) {
+  constructor(public navCtrl: NavController) {
 
   }
 

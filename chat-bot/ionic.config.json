@@ -2,5 +2,7 @@
   "name": "chat-bot",
   "app_id": "",
   "type": "ionic-angular",
-  "integrations": {}
+  "integrations": {
+    "cordova": {}
+  }
 }
