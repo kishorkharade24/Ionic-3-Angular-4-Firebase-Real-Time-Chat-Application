@@ -35,6 +35,9 @@ export class ChatPage {
       // data.map(elem => {
       //   this.messages.push(elem);
       // })
+      setTimeout(() => {
+        this.scrollToBottom();
+      },300)
     })
   }
 
@@ -52,6 +55,7 @@ export class ChatPage {
       specialMessage: true,
       message: `${this.userName} has left the room`
     })
+    this.scrollToBottom();
   }
 
   sendMessage() {
