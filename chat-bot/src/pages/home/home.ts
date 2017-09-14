@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { NavController, AlertController } from 'ionic-angular';
 import {ChatPage} from "../chat/chat";
+import {RegisterPage} from "../register/register";
+import {SigninPage} from "../signin/signin";
 
 @Component({
   selector: 'page-home',
@@ -14,27 +16,12 @@ export class HomePage {
 
   }
 
-  loginUser() {
-    this.navCtrl.push(ChatPage, {
-      userName: this.userName
-    });
-    // if (/^[a-zA-Z0-9]]+$/.test(this.userName)) {
-    //   this.navCtrl.push(ChatPage, {
-    //     userName: this.userName
-    //   });
-    // } else {
-    //   this.alert('Error', 'Invalid username!');
-    // }
+  signInUser() {
+    this.navCtrl.push(SigninPage);
   }
 
-  alert(title: string, message: string) {
-    let alert = this.alertCtrl.create({
-      title: title,
-      subTitle: message,
-      buttons: ['OK']
-    });
-
-    alert.present();
+  registerUser() {
+    this.navCtrl.push(RegisterPage);
   }
 
 }
